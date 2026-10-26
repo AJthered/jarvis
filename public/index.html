@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jarvis</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar">
+        <div class="brand">
+          <span class="brand-mark">J</span>
+          <span>Jarvis</span>
+        </div>
+
+        <nav class="nav">
+          <button class="nav-item active">Overview</button>
+          <button class="nav-item">Tasks</button>
+          <button class="nav-item">Systems</button>
+          <button class="nav-item">Settings</button>
+        </nav>
+      </aside>
+
+      <main class="content">
+        <header class="topbar">
+          <div>
+            <p class="eyebrow">System status</p>
+            <h1>Operations Console</h1>
+          </div>
+          <div id="status-pill" class="status-pill">Checking...</div>
+        </header>
+
+        <section class="hero">
+          <div>
+            <p class="eyebrow">Assistant</p>
+            <h2>Good to see you again.</h2>
+            <p id="assistant-message">Initializing Jarvis...</p>
+          </div>
+          <button class="primary-btn">Run diagnostic</button>
+        </section>
+
+        <section class="cards">
+          <article class="card">
+            <p class="label">Core status</p>
+            <h3>Online</h3>
+            <span>All systems nominal</span>
+          </article>
+
+          <article class="card">
+            <p class="label">Active tasks</p>
+            <h3>03</h3>
+            <span>Two pending, one complete</span>
+          </article>
+
+          <article class="card">
+            <p class="label">Last sync</p>
+            <h3>Now</h3>
+            <span>Data refreshed</span>
+          </article>
+        </section>
+      </main>
+    </div>
+
+    <script src="/app.js"></script>
+  </body>
+</html>
